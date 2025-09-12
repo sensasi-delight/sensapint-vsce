@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+
+# Development folders
+.vscode/**
+.git/**
+
+# Source files (only ship compiled JS in out/)
+src/**
+*.ts
+tsconfig.json
+
+# Other configs & docs not needed in extension package
+.vscodeignore
+.gitignore
+README.md
+CHANGELOG.md
+LICENSE
+bun.lock

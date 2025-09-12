@@ -1,0 +1,29 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Build output
+*.vsix
+out/
+dist/
+coverage/
+
+# VS Code
+.vscode/
+.vscode-test/
+
+# Logs
+*.log
+logs/
+*.pid
+*.seed
+*.tgz
+
+# System files
+.DS_Store
+Thumbs.db

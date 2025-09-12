@@ -1,0 +1,76 @@
+{
+  "name": "sensapint-vsce",
+  "displayName": "Sensapint",
+  "description": "🚀 Sensapint is a Visual Studio Code extension that formats your PHP files using Laravel Pint. Bring consistent and elegant code style to your PHP projects — right from your editor.",
+  "version": "1.0.0-dev.0",
+  "publisher": "sensasi-delight",
+  "license": "MIT",
+  "author": {
+    "name": "sensasi-delight",
+    "email": "zainadam@gmail.com",
+    "url": "https://github.com/sensasi-delight"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sensasi-delight/sensapint-vsce.git"
+  },
+  "homepage": "https://github.com/sensasi-delight/sensapint-vsce",
+  "bugs": {
+    "url": "https://github.com/sensasi-delight/sensapint-vsce/issues"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Formatters",
+    "Linters",
+    "Other"
+  ],
+  "keywords": [
+    "php",
+    "formatter",
+    "laravel",
+    "pint",
+    "laravel pint",
+    "code style",
+    "psr-12",
+    "php formatter",
+    "php code style",
+    "php-cs-fixer",
+    "laravel tool"
+  ],
+  "activationEvents": [
+    "onLanguage:php"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "php",
+        "extensions": [
+          ".php"
+        ],
+        "aliases": [
+          "PHP"
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "sensapint.format",
+        "title": "Format PHP with Laravel Pint"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p ./ && vsce package",
+    "install-local": "code --install-extension $(ls -t *.vsix | head -n1)"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "@types/vscode": "^1.104.0",
+    "@vscode/vsce": "^3.6.0",
+    "typescript": "^5.9.2",
+    "vscode": "^1.1.37"
+  }
+}
