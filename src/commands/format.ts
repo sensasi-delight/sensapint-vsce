@@ -1,6 +1,7 @@
 import { window } from "vscode";
 import { formatWithPint } from "../utils/format-with-pint";
 import notifyFormatError from "../utils/notify-format-error";
+import notifyFormatSuccess from "../utils/notify-format-success";
 
 export default async function format() {
   const editor = window.activeTextEditor;
@@ -15,5 +16,7 @@ export default async function format() {
     return;
   }
 
-  return formatWithPint(document).catch(notifyFormatError);
+  return formatWithPint(document)
+    .then(notifyFormatSuccess)
+    .catch(notifyFormatError);
 }
