@@ -2,13 +2,17 @@ import { exec } from "child_process";
 import * as vscode from "vscode";
 import * as path from "path";
 import * as fs from "fs";
+import log from "./log";
 
 export async function formatWithPint(document: vscode.TextDocument) {
   const filePath = document.fileName;
 
+  log("info", `Formatting ${filePath}`);
+
   return new Promise<void>((resolve, reject) => {
     runPint([filePath], document.uri)
       .then(() => resolve())
+      .then(() => log("info", `Formatted ${filePath} successfully`))
       .catch((err) => reject(err));
   });
 }
@@ -46,6 +50,7 @@ function runPint(args: string[], uri: vscode.Uri) {
         reject(new Error(stderr || error.message));
         return;
       }
+
       resolve();
     });
   });
