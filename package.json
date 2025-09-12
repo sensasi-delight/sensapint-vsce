@@ -19,7 +19,7 @@
     "url": "https://github.com/sensasi-delight/sensapint-vsce/issues"
   },
   "engines": {
-    "vscode": "^1.90.0"
+    "vscode": "^1.104.0"
   },
   "categories": [
     "Formatters",
@@ -58,19 +58,18 @@
     "commands": [
       {
         "command": "sensapint.format",
-        "title": "Format PHP with Laravel Pint"
+        "title": "Sensapint: Format PHP with Laravel Pint"
       }
     ]
   },
   "scripts": {
     "build": "tsc -p ./ && vsce package",
-    "install-local": "code --install-extension $(ls -t *.vsix | head -n1)"
+    "dev": "tsc -p ./ -w"
   },
   "devDependencies": {
     "@types/node": "^24.3.1",
     "@types/vscode": "^1.104.0",
     "@vscode/vsce": "^3.6.0",
-    "typescript": "^5.9.2",
-    "vscode": "^1.1.37"
+    "typescript": "^5.9.2"
   }
 }
