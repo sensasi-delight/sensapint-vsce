@@ -2,7 +2,7 @@
   "name": "sensapint-vsce",
   "displayName": "Sensapint",
   "description": "🚀 Sensapint is a Visual Studio Code extension that formats your PHP files using Laravel Pint. Bring consistent and elegant code style to your PHP projects — right from your editor.",
-  "version": "1.0.0-dev.0",
+  "version": "0.0.1",
   "publisher": "sensasi-delight",
   "license": "MIT",
   "author": {
