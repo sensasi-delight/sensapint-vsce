@@ -1,3 +1,9 @@
+> [!WARNING]
+> This project has been archived because the official [Laravel VS Code Extension v1.20](https://github.com/laravel/vs-code-extension/releases/tag/v1.2.0) now includes the [same functionality](https://github.com/laravel/vs-code-extension/pull/451).
+> It is actively maintained by the Laravel team and community, ensuring better support and long-term improvements.
+> 
+> ➡️ Please switch to the official extension for the best experience.
+
 # Sensapint
 
 🚀 **Sensapint** is a Visual Studio Code extension that formats your PHP files using [Laravel Pint](https://laravel.com/docs/pint).
@@ -79,3 +85,4 @@ Feel free to open an issue or submit a pull request on [GitHub](https://github.c
 ## 📄 License
 
 [MIT License](LICENSE)
+
